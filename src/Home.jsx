@@ -1,12 +1,12 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
 import { Link } from 'react-router'
-function Details() {
-const[articl,setArticl]=useState([])
+function Home() {
+const[articl,setArticl] = useState([])
 
 useEffect(()=>{
       axios.get(`https://jsonplaceholder.typicode.com/posts`)
-  .then(function (response) {
+  .then( (response) =>{
     setArticl(response.data)
     // handle success
     console.log(response);
@@ -20,8 +20,8 @@ useEffect(()=>{
   return (
     <>
     <div>
-{articl.map((item,i)=>(
-    <div   key={i}>
+{articl.map((item)=>(
+    <div>
         {/* <p>{item.title}</p> */}
         <Link to={`/details/${item.id}`}>
         
@@ -35,4 +35,4 @@ useEffect(()=>{
   )
 }
 
-export default Details
+export default Home

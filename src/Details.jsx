@@ -7,7 +7,7 @@ const[articl,setArticl]=useState("")
 const {id} = useParams()
 useEffect(()=>{
       axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-  .then(function (response) {
+  .then((response)=> {
     setArticl(response.data)
     // handle success
     
