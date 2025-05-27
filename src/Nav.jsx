@@ -5,6 +5,10 @@ function Nav() {
     <div>
 <Link to="/">Home</Link>
 <Link to="/:id">Details</Link>
+
+{/* <Link to="/details/id">
+
+</Link> */}
 {/* <Link to="/:id">Details</Link> */}
     </div>
   )

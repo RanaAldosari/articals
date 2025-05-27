@@ -21,7 +21,7 @@ useEffect(()=>{
     <>
     <div>
 {articl.map((item,i)=>(
-    <div key={i}>
+    <div   key={i}>
         {/* <p>{item.title}</p> */}
         <Link to={`/details/${item.id}`}>
         

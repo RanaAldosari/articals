@@ -11,7 +11,7 @@ useEffect(()=>{
     setArticl(response.data)
     // handle success
     
-    console.log(response);
+    console.log(response.id);
   })
   .catch(function (error) {
     // handle error
